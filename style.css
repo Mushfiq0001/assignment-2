@@ -1,0 +1,171 @@
+/* ----------
+     font 
+------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* --------
+ body sytle
+  ------ */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* -----------
+football introduction
+--------- */
+.container{
+    background: #0d11ff;
+    display: flex;
+}
+
+.football-details{
+    font-style: normal;
+font-weight: bold;
+font-size: 64px;
+color: #FFFFFF;
+    padding: 207px 102px 240px 156px;
+}
+.container .football-image img {
+    width: 556.01px;
+    height: 438px;
+    
+    padding-top: 153px;
+    padding-right: 140.99px;
+    padding-bottom: 86px;
+    transition: 3s
+    all;
+}
+.container .football-image img:hover{
+    transform: scale(1.1);
+}
+ button {
+    width: 140px;
+    height: 40px;
+    background: #fa0861;
+     top: 0;
+     left: 1041px;
+     border: none;
+     border-radius: 5px;
+}
+button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+button:hover{
+    background: #f373a2;
+}
+
+/* ------------
+  player details
+ --------------- */
+
+
+ .players{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 30px;
+     margin-top: 70px;
+     
+ }
+ .player {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-right: 50px;
+ }
+
+.players .player .image img {
+    width: 300px;
+    height: 256px;
+    border-radius: 10px;
+}
+.title{
+    width: 300px;
+    height: 153px;
+    margin-left: 10px;
+}
+/* ---------------
+Extra Details
+-----------------  */
+.extra{
+    display: flex;
+}
+.extra-info{
+    width: 466px;
+    height: 241px;
+    padding: 224px 69px 493px 182px;
+}
+
+.extra .extra-image img{
+    width: 6507px;
+    height: 400px;
+    padding-top: 165px;
+    padding-right: 130px;
+    padding-bottom: 434px;
+}
+
+
+
+
+/*----------
+ icon-inf0 
+------------ */
+.icon-info{
+    justify-content: center;
+    align-items: center;
+    width: 483.87px;
+height: 213px;
+}
+
+.icon-info img{
+width: 483.87px;
+height: 213px;
+}
+
+
+/* footer-container  */
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.footer-image img{
+    width: 150.87px;
+    height: 100px;
+}
+.footer-icon img{
+  width: 32px;
+  height: 32px;
+  padding: 130px 156.94px 51px 156.94;
+  font-size: 40px;
+}
+
+
+
+
+/* media quries  */
+
+/* mobile devices  */
+
+@media only screen and (max-width : 688px) {
+  .header{
+      width: 100%;
+  }
+  .container{
+      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
+  }
+    .players{
+            width: 100%;
+            grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    
+}
